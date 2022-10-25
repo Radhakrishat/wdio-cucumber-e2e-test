@@ -6,8 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run test/wdio.conf.ts",
-    "demo": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@demo'",
-    "smoke": "npx wdio wdio.conf.ts --cucumberOpts.tagExpression='@demo'"
+    "test:ATS": "set DEBUG=Y && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@ATS'",
+    "test:debug": "set DEBUG=Y && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@demo'",
+    "test:demo": "set DEBUG=N && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@demo'"  
+    
+    
   },
   "keywords": [
     "wdio",
@@ -26,8 +29,10 @@
     "@wdio/spec-reporter": "^7.25.1",
     "chai": "^4.3.6",
     "chromedriver": "^106.0.1",
+    "dotenv": "^16.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4",
-    "wdio-chromedriver-service": "^8.0.0"
+    "wdio-chromedriver-service": "^8.0.0",
+    "winston": "^3.8.2"
   }
 }
