@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666729307814' stop='1666729310172'>
+    <name>Inventory</name>
+    <title>Inventory</title>
+    <test-cases>
+        <test-case start='1666729307826' status='passed' stop='1666729310171'>
+            <name>INTV_TC001: Demo Inventory</name>
+            <title>INTV_TC001: Demo Inventory</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+                <label name='feature' value='Inventory'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-106.0.5249.119'/>
+                <parameter kind='environment-variable' name='Environment: ' value='TEST'/>
+            </parameters>
+            <steps>
+                <step start='1666729307828' status='passed' stop='1666729309048'>
+                    <name>Given Login to inventory web app</name>
+                    <title>Given Login to inventory web app</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1666729307832' status='passed' stop='1666729307832'>
+                            <name>Login to sauce demo</name>
+                            <title>Login to sauce demo</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1666729309046' status='passed' stop='1666729309046'>
+                            <name>login is successful....</name>
+                            <title>login is successful....</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1666729309048' status='passed' stop='1666729310087'>
+                    <name>Then Inventory page should list 6</name>
+                    <title>Then Inventory page should list 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1666729310087' status='passed' stop='1666729310170'>
+                    <name>Then Validate all products have valid price</name>
+                    <title>Then Validate all products have valid price</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
