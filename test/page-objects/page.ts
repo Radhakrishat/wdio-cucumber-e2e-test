@@ -8,7 +8,7 @@ export default class Page {
     /**All reusable web functions */
     async navigateTo(path: string) {
         await browser.url(path)
-        // await browser.maximizeWindow()
+        await browser.maximizeWindow()
     }
     async click(ele: WebdriverIO.Element) {
         await ele.waitForClickable({ timeout: 5000 })
@@ -23,5 +23,12 @@ export default class Page {
             throw Error(ele.error.message)
         }
         await ele.setValue(text)
+    }
+    async selectdropdown(ele:WebdriverIO.Element, text: string){
+        await ele.waitForDisplayed({ timeout: 5000 })
+        if (!ele.elementId){
+            throw Error(ele.error.message)
+        }
+        await ele.selectByAttribute("value", text)
     }
 }

@@ -1,6 +1,6 @@
 Feature: Inventory
 
-    @demo @smoke @debug
+    @demo @smoke
     Scenario Outline: <TestId>: Demo Inventory
         Given Login to inventory web app
         Then Inventory page should list <NumberOfProducts>
