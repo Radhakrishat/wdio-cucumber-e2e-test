@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666807543141' stop='1666807651244'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1666944425661' stop='1666944438569'>
     <name>NewAccount</name>
     <title>NewAccount</title>
     <test-cases>
-        <test-case start='1666807543153' status='passed' stop='1666807651244'>
+        <test-case start='1666944425668' status='failed' stop='1666944438567'>
             <name>ATS_TC001: Register on the website</name>
             <title>ATS_TC001: Register on the website</title>
             <labels>
@@ -17,24 +17,24 @@
                 <parameter kind='environment-variable' name='Environment: ' value='TEST'/>
             </parameters>
             <steps>
-                <step start='1666807543155' status='passed' stop='1666807561145'>
+                <step start='1666944425669' status='passed' stop='1666944434435'>
                     <name>Given Register to Automation Test Store</name>
                     <title>Given Register to Automation Test Store</title>
                     <attachments/>
                     <steps>
-                        <step start='1666807543158' status='passed' stop='1666807543158'>
+                        <step start='1666944425672' status='passed' stop='1666944425672'>
                             <name>New account register to Automation Test Store</name>
                             <title>New account register to Automation Test Store</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807553707' status='passed' stop='1666807553707'>
+                        <step start='1666944433211' status='passed' stop='1666944433211'>
                             <name>Login or register button clicked</name>
                             <title>Login or register button clicked</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807556130' status='passed' stop='1666807556130'>
+                        <step start='1666944434434' status='passed' stop='1666944434434'>
                             <name>Continue button clicked</name>
                             <title>Continue button clicked</title>
                             <attachments/>
@@ -42,98 +42,98 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1666807561145' status='passed' stop='1666807617948'>
+                <step start='1666944434436' status='passed' stop='1666944437397'>
                     <name>Then Create Account by enter all fields</name>
                     <title>Then Create Account by enter all fields</title>
                     <attachments>
-                        <attachment title='Data Table' source='fe5d50c8-e5dc-4620-adee-3184b68fa2c0-attachment.csv' type='text/csv' size='190'/>
+                        <attachment title='Data Table' source='1a86a010-48f2-46c6-a5ae-1556a0a5357c-attachment.csv' type='text/csv' size='190'/>
                     </attachments>
                     <steps>
-                        <step start='1666807561151' status='passed' stop='1666807561151'>
+                        <step start='1666944434444' status='passed' stop='1666944434444'>
                             <name>Account form fill for new registeration</name>
                             <title>Account form fill for new registeration</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807561250' status='passed' stop='1666807561250'>
-                            <name>First Name: Peter4 entered sucessfully</name>
-                            <title>First Name: Peter4 entered sucessfully</title>
+                        <step start='1666944434538' status='passed' stop='1666944434538'>
+                            <name>First Name: Peter8 entered sucessfully</name>
+                            <title>First Name: Peter8 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807566378' status='passed' stop='1666807566378'>
-                            <name>Last Name: Chris4 entered sucessfully</name>
-                            <title>Last Name: Chris4 entered sucessfully</title>
+                        <step start='1666944434630' status='passed' stop='1666944434630'>
+                            <name>Last Name: Chris8 entered sucessfully</name>
+                            <title>Last Name: Chris8 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807571488' status='passed' stop='1666807571488'>
-                            <name>Email: Peter.Chris4@gmail.com entered sucessfully</name>
-                            <title>Email: Peter.Chris4@gmail.com entered sucessfully</title>
+                        <step start='1666944434747' status='passed' stop='1666944434747'>
+                            <name>Email: Peter.Chris8@gmail.com entered sucessfully</name>
+                            <title>Email: Peter.Chris8@gmail.com entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807576609' status='passed' stop='1666807576609'>
+                        <step start='1666944434837' status='passed' stop='1666944434837'>
                             <name>Address 1: street 1 entered sucessfully</name>
                             <title>Address 1: street 1 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807581740' status='passed' stop='1666807581740'>
+                        <step start='1666944434911' status='passed' stop='1666944434911'>
                             <name>City: Utrecht entered sucessfully</name>
                             <title>City: Utrecht entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807586845' status='passed' stop='1666807586845'>
+                        <step start='1666944434973' status='passed' stop='1666944434973'>
                             <name>Country: 150 entered sucessfully</name>
                             <title>Country: 150 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807591932' status='passed' stop='1666807591932'>
+                        <step start='1666944435362' status='passed' stop='1666944435362'>
                             <name>Region: 2338 entered sucessfully</name>
                             <title>Region: 2338 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807597051' status='passed' stop='1666807597051'>
+                        <step start='1666944435463' status='passed' stop='1666944435463'>
                             <name>Zip code: 34567 entered sucessfully</name>
                             <title>Zip code: 34567 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807602189' status='passed' stop='1666807602189'>
-                            <name>Login: PeterChris5 entered sucessfully</name>
-                            <title>Login: PeterChris5 entered sucessfully</title>
+                        <step start='1666944435533' status='passed' stop='1666944435533'>
+                            <name>Login: PeterChris9 entered sucessfully</name>
+                            <title>Login: PeterChris9 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807607324' status='passed' stop='1666807607324'>
+                        <step start='1666944435624' status='passed' stop='1666944435624'>
                             <name>Password: Password1 entered sucessfully</name>
                             <title>Password: Password1 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807612429' status='passed' stop='1666807612429'>
+                        <step start='1666944435695' status='passed' stop='1666944435695'>
                             <name>Confrim Password: Password1 entered sucessfully</name>
                             <title>Confrim Password: Password1 entered sucessfully</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807617521' status='passed' stop='1666807617521'>
+                        <step start='1666944435750' status='passed' stop='1666944435750'>
                             <name>News letter radio button clicked</name>
                             <title>News letter radio button clicked</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807617573' status='passed' stop='1666807617573'>
+                        <step start='1666944435807' status='passed' stop='1666944435807'>
                             <name>Agree check box clicked</name>
                             <title>Agree check box clicked</title>
                             <attachments/>
                             <steps/>
                         </step>
-                        <step start='1666807617948' status='passed' stop='1666807617948'>
+                        <step start='1666944437396' status='passed' stop='1666944437396'>
                             <name>Login or register button clicked</name>
                             <title>Login or register button clicked</title>
                             <attachments/>
@@ -141,16 +141,17 @@
                         </step>
                     </steps>
                 </step>
-                <step start='1666807617949' status='passed' stop='1666807651243'>
+                <step start='1666944437397' status='failed' stop='1666944438566'>
                     <name>Then Validate on the landing screen with correct name</name>
                     <title>Then Validate on the landing screen with correct name</title>
                     <attachments>
-                        <attachment title='Data Table' source='8c65c6d9-785b-414b-a4b3-0f471564d6c5-attachment.csv' type='text/csv' size='17'/>
+                        <attachment title='Data Table' source='1c30ab63-62bf-415c-8b42-068445e61661-attachment.csv' type='text/csv' size='17'/>
+                        <attachment title='Screenshot' source='a3f7a667-a075-41a1-985b-078968ea0288-attachment.png' type='image/png' size='106497'/>
                     </attachments>
                     <steps>
-                        <step start='1666807617953' status='passed' stop='1666807617953'>
-                            <name>Account form fill for new registeration</name>
-                            <title>Account form fill for new registeration</title>
+                        <step start='1666944437406' status='passed' stop='1666944437406'>
+                            <name>Correct First is displaced on Landing page</name>
+                            <title>Correct First is displaced on Landing page</title>
                             <attachments/>
                             <steps/>
                         </step>
@@ -158,6 +159,12 @@
                 </step>
             </steps>
             <attachments/>
+            <failure>
+                <message>AssertionError: Failed to Create account, expected 'Welcome back Peter8' to include 'Peter7'</message>
+                <stack-trace>AssertionError: Failed to Create account, expected 'Welcome back Peter8' to include 'Peter7'
+                    at CustomWorld.&lt;anonymous> (C:\Users\0057C7744\Documents\workspace\wdio-cucumber-e2e-test\test\features\step-definitions\ATS.ts:64:29)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
         </test-case>
     </test-cases>
 </ns2:test-suite>

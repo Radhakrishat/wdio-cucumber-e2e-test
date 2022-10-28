@@ -33,8 +33,7 @@ class AccountPage extends Page {
             firstname = firstname.trim()
             await this.typeInto(await this.firstnameInputBox, firstname)
             reporter.addStep(testid, "info", `First Name: ${firstname} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering FirstName: ${firstname}, ${err.message}`
             throw err
@@ -47,8 +46,7 @@ class AccountPage extends Page {
             lastname = lastname.trim()
             await this.typeInto(await this.lastnameInputBox, lastname)
             reporter.addStep(testid, "info", `Last Name: ${lastname} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering Last Name: ${lastname}, ${err.message}`
             throw err
@@ -61,8 +59,7 @@ class AccountPage extends Page {
             email = email.trim()
             await this.typeInto(await this.emailInputBox, email)
             reporter.addStep(testid, "info", `Email: ${email} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering Email: ${email}, ${err.message}`
             throw err
@@ -75,8 +72,7 @@ class AccountPage extends Page {
             address1 = address1.trim()
             await this.typeInto(await this.address1InputBox, address1)
             reporter.addStep(testid, "info", `Address 1: ${address1} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering Address 1: ${address1}, ${err.message}`
             throw err
@@ -89,8 +85,7 @@ class AccountPage extends Page {
             city = city.trim()
             await this.typeInto(await this.cityInputBox, city)
             reporter.addStep(testid, "info", `City: ${city} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering City: ${city}, ${err.message}`
             throw err
@@ -101,11 +96,9 @@ class AccountPage extends Page {
         if(!country) throw Error(`Given Country: ${country} is not valid `)
         try {
             country = country.trim()
-            // await this.typeInto(await this.countrySelect, country)
             await this.selectdropdown(await this.countrySelect, country )
             reporter.addStep(testid, "info", `Country: ${country} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering Country: ${country}, ${err.message}`
             throw err
@@ -116,12 +109,9 @@ class AccountPage extends Page {
         if(!region) throw Error(`Given Region: ${region} is not valid `)
         try {
             region = region.trim()
-            // await this.typeInto(await this.zoneselect, region)
             await this.selectdropdown(await this.zoneselect, region )
             reporter.addStep(testid, "info", `Region: ${region} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
-        } catch (err) {
+         } catch (err) {
             err.message = `Error entering Region: ${region}, ${err.message}`
             throw err
         }
@@ -133,8 +123,7 @@ class AccountPage extends Page {
             zipcode = zipcode.trim()
             await this.typeInto(await this.postcodeInputBox, zipcode)
             reporter.addStep(testid, "info", `Zip code: ${zipcode} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering Zip code: ${zipcode}, ${err.message}`
             throw err
@@ -147,8 +136,7 @@ class AccountPage extends Page {
             login = login.trim()
             await this.typeInto(await this.loginInputBox, login)
             reporter.addStep(testid, "info", `Login: ${login} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering Login: ${login}, ${err.message}`
             throw err
@@ -161,8 +149,7 @@ class AccountPage extends Page {
             password = password.trim()
             await this.typeInto(await this.passwordInputBox, password)
             reporter.addStep(testid, "info", `Password: ${password} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering Password: ${password}, ${err.message}`
             throw err
@@ -175,8 +162,7 @@ class AccountPage extends Page {
             confrim = confrim.trim()
             await this.typeInto(await this.confirmInputBox, confrim)
             reporter.addStep(testid, "info", `Confrim Password: ${confrim} entered sucessfully`)
-            // await browser.debug()
-            await browser.pause(5000)
+            
         } catch (err) {
             err.message = `Error entering confirm Password: ${confrim}, ${err.message}`
             throw err
@@ -215,19 +201,8 @@ class AccountPage extends Page {
         }
 
     }
-
     
-    /** call all fields */
-    // async CreateAccount(testid: string, firstname: string){
-    //     try {
-    //         await this.enterfirstname(testid, firstname)
-
-
-    //     } catch(err){
-    //         throw err
-    //     }
-    // }
-
+  
 }
 
 export default new AccountPage()

@@ -9,7 +9,6 @@ class HomePage extends Page{
 
     /** Page Objects  */
     get LoginorregisterBtn() { return $('#customer_menu_top')}
-    // get ContinueBtn() { return $('#accountFrm')}
     get ContinueBtn() { return $('//*[@id="accountFrm"]/fieldset/button')}
     
 
@@ -35,16 +34,6 @@ class HomePage extends Page{
         }
 
     }
-
-    
-    // async RegisterAccount(testid: string) {
-    //     try {
-    //         await this.LoginorregisterBtn(testid)
-    //         await this.ContinueBtn(testid)
-    //     } catch (err) {
-            
-    //     }
-    // }
 
 
 }

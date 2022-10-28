@@ -11,12 +11,9 @@ Given(/^Register to Automation Test Store$/, async function () {
     try {
         reporter.addStep(this.testid, "info", "New account register to Automation Test Store")
         //@ts-ignore
-        // await ATSHomePage.navigateTo(browser.config.ATSURL)
-        await ATSHomePage.navigateTo("https://automationteststore.com/")
+        await ATSHomePage.navigateTo(browser.config.ATSURL)
         await ATSHomePage.clickLoginorregisterBtn(this.testid)
         await ATSHomePage.clickContinueBtn(this.testid)
-        // await browser.debug()
-        await browser.pause(1000)
     } catch (err) {
         err.message = `Failed at login step, ${err.message}`
         throw err
@@ -58,15 +55,14 @@ Then(/^Create Account by enter all fields$/, async function (dataTable) {
 /** Validate user name on landing page */
 Then(/^Validate on the landing screen with correct name$/, async function (dataTable) {
     let dt = dataTable.hashes()   
-    //expect(val).toHaveValueContaining(dt[0].FirstName)
+    
     try {
         reporter.addStep(this.testid, "info", "Correct First is displaced on Landing page")
         await browser.pause(1000)
         let eletext= await $('#customer_menu_top')
-        // let val = await eletext.$$('li')[2].$('a').getText()
         let val = await eletext.getText()
         chai.expect(val).to.contain(dt[0].FirstName)
-        // await browser.debug()    
+        
     } catch (err) {
         err.message = `Failed to Create account, ${err.message}`
         throw err

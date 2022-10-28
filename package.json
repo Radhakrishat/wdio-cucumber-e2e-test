@@ -7,10 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run test/wdio.conf.ts",
     "test:ATS": "set DEBUG=Y && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@ATS'",
-    "test:debug": "set DEBUG=Y && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@demo'",
-    "test:demo": "set DEBUG=N && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@demo'"  
-    
-    
+    "test:demo": "set DEBUG=Y && set HEADLESS=N && npx wdio config/wdio.test.conf.ts --cucumberOpts.tagExpression='@demo'"  
+        
   },
   "keywords": [
     "wdio",
