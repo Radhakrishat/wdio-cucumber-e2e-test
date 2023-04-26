@@ -4,7 +4,8 @@ export default class Page {
     constructor() {
 
     }
-
+/**All reusable web functions */
+    /**All reusable web functions */
     /**All reusable web functions */
     async navigateTo(path: string) {
         await browser.url(path)
